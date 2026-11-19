@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI · all 55 trophies, roadmap &amp; tracker</title>
+<meta name="description" content="An offline guide and tracker for all 55 PlayStation 5 trophies of Grand Theft Auto VI: official names, descriptions and grades, a roadmap to the Platinum, missable flags, and a checklist that saves in your browser.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="masthead">
+  <div class="masthead-inner">
+    <p class="kicker">Grand Theft Auto VI · PlayStation 5 · 55 trophies</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="subtitle">Every trophy, its official name and description, a guide in our own words with its sources, a roadmap to the Platinum — and a checklist that remembers what you earned. Works fully offline; nothing leaves your browser.</p>
+    <div class="progress-wrap" aria-label="Platinum progress">
+      <div class="progress-line"><span id="progressText">0 of 55 earned</span><span id="progressPct">0%</span></div>
+      <div class="progress-bar"><div id="progressFill"></div></div>
+      <p class="progress-grades" id="progressGrades"></p>
+    </div>
+  </div>
+</header>
+
+<nav class="toolbar" aria-label="Tracker controls">
+  <input id="search" type="search" placeholder="Search a trophy, mission or place…" aria-label="Search trophies">
+  <div class="chips" id="kindChips" role="group" aria-label="Filter by kind"></div>
+  <label class="tool">Grade
+    <select id="gradeFilter">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label class="tool check"><input id="earnedOnly" type="checkbox"> Earned only</label>
+  <label class="tool check"><input id="spoilerToggle" type="checkbox" checked> Hide story spoilers</label>
+  <button id="exportBtn" type="button">Export progress</button>
+  <label class="import-btn">Import progress <input id="importFile" type="file" accept="application/json,.json"></label>
+  <button id="resetBtn" type="button" class="quiet">Reset</button>
+</nav>
+
+<main>
+  <section id="roadmap" class="roadmap" aria-label="Roadmap to the Platinum">
+    <h2>Roadmap to the Platinum</h2>
+    <p id="roadmapIntro" class="roadmap-intro"></p>
+    <ol id="roadmapStages" class="stages"></ol>
+    <aside class="warnings">
+      <h3>Before you start — read this first</h3>
+      <ul>
+        <li><strong>Cheats off.</strong> PowerPyx reports that turning on a cheat disables trophies — and GameSpot and PC Gamer add that you cannot save any more once you have used one.</li>
+        <li><strong>No mission replay.</strong> Make a manual save at the start of every chapter and one before the final mission; those saves are your only way back.</li>
+        <li><strong>One possibly missable trophy:</strong> <span class="missable-flag">Positive Mental Attitude</span> — meditate at every spot as you find it, starting with Lucia's balcony in Chapter 1.</li>
+        <li><strong>No online trophies.</strong> The whole list is single-player, so the Platinum needs no online play at all.</li>
+      </ul>
+    </aside>
+  </section>
+
+  <div class="tracker-grid">
+    <section class="list-col" aria-label="Trophy checklist">
+      <h2 id="listHeading">Checklist <span id="listCount"></span></h2>
+      <p id="emptyState" class="empty" hidden></p>
+      <ul id="trophyList" class="trophy-list"></ul>
+    </section>
+    <aside class="detail-col" aria-label="Trophy guide">
+      <div id="detail" class="detail">
+        <p class="detail-hint">Select a trophy on the left to read its guide and sources here.</p>
+      </div>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <h2>Sources &amp; honesty notes</h2>
+  <p>Official trophy names, descriptions and grades are shown as PlayStation publishes them, reported 18 November 2026 by Push Square from Exophase and cross-checked with PSNProfiles — see the <a href="https://www.planetgta6.com/en/gta-6-trophies/">Planet GTA 6 trophy list</a>. Every guide is written in our own words for this guide; each one names where its facts come from, beside the trophy. Where no source has confirmed how a trophy unlocks yet at launch, the guide says so and works from the official description alone — it never invents a location or a step. Counts the PlayStation list tracks (250 stunts, 42 Shooting Range challenges, 14 drone-race locations, 18 meditation spots, 52 areas, 9 gangs, 8 garages, 10 Scooter Bros vehicles) come from that same official list.</p>
+  <p>Further reading: <a href="https://outputlag.com/guides/gta-6-trophy-list/">Output Lag trophy list</a> · <a href="https://egamers.io/gta-6-trophy-list-all-55-trophies-and-achievements-plus-the-hardest-ones/">EGamers trophy list</a> · <a href="https://www.gtavicecityhub.com/achievements">GTA Vice City Hub achievements</a> · <a href="https://www.gta6everything.com/news/gta-6-trophy-and-achievement-list-55-platinum-100-percent">GTA 6 trophy coverage (Push Square, GamesRadar+, PC Gamer)</a></p>
+  <p class="fineprint">An unofficial fan guide. Not affiliated with Rockstar Games, Take-Two Interactive, Sony or PlayStation. No official artwork or logos are used. Your checklist is stored only in this browser (localStorage) and can be exported to a file; this page makes no network requests of its own.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
